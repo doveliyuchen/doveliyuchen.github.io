@@ -8,9 +8,8 @@ p {
 img {
   border: solid 2px;
 }
-figure {
-  background-color: GreenYellow;
-   
+.inline-block {
+   display: inline-block;
 }
 
 figcaption {
