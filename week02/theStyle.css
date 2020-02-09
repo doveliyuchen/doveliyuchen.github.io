@@ -6,17 +6,17 @@ h1 {
   background-color: red;
 }
 p {
-  background-color: yellow;
+  background-color: lightyellow;
 }
 
 img {
-  border: solid 10px;
+  border: solid 2px;
 }
 figure {
-  background-color: green;
+  background-color: lightgreen;
 }
 
 figcaption {
-  background-color: pink;
+  background-color: lightpink;
 
 }
