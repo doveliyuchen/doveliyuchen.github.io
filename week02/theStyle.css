@@ -8,10 +8,6 @@ p {
 img {
   border: solid 2px;
 }
-.inline-block {
-   display: inline-block;
-}
-
 figcaption {
   background-color: lightpink;
 
