@@ -1,0 +1,43 @@
+
+body {
+  background-image: url("1.png");
+  /* font-family: Courier New; */
+  font-family: 'Nunito', sans-serif;
+background-size: 100%, auto;
+
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Bad Script', cursive;
+	
+	font-size: 30px;
+	background-color: rgba(209,214,255,70%);
+}
+main{
+	font-family: 'Nunito', sans-serif;
+	background-color: rgba(172,255,247,70%);
+	 padding: 50px;
+
+
+}
+a{
+
+font-family: 'Bad Script', cursive;
+
+font-size: 20px;
+
+
+}
+}
+a:hover {
+	color: rgba(255,221,209,90%);
+  font-size: larger;
+}
+
+ul{
+padding-left: 250px;
+list-style-position: inside;
+list-style-image: url("https://mdn.mozillademos.org/files/11979/starsolid.gif");
+
+}
