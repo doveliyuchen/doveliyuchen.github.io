@@ -59,18 +59,18 @@ background-color: rgba(255,255,255,80%);
 	 text-indent: 300px;
 }
 
-.next{right: 500px;
+.next{right: 450px;
 	top: 120px;
-position: absolute;}
+position: fixed;}
 .back{
-right: 900px;
+right: 850px;
 	top: 120px;
-position: absolute;
+position: fixed;
 
 }
-.home{right: 700px;
+.home{right: 650px;
 	top: 120px;
-position: absolute;}
+position: fixed;}
 
 #map{
 	 width: 38%;
