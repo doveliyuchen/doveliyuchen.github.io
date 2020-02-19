@@ -1,0 +1,132 @@
+body {
+  background-image: url("3.jpg");
+  /* font-family: Courier New; */
+  font-family: 'Nunito', sans-serif;
+background-size: 100%, auto;
+
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Bad Script', cursive;
+	color: rgb(255,230,255);
+	font-size: 30px;
+	background-color: rgba(0,0,0,80%);
+}
+main{
+	font-family: 'Nunito', sans-serif;
+	background-color: rgba(255,230,255,70%);
+	 padding: 50px;
+
+
+}
+a{
+
+font-family: 'Bad Script', cursive;
+
+font-size: 20px;
+
+text-align: center;
+
+
+}
+}
+a:hover {
+	color: rgba(255,221,209,90%);
+  font-size: larger;
+}
+
+ul{
+	font-family: 'Georgia', serif;
+padding-left: 250px;
+list-style-position: inside;
+font-size: x-large;
+
+
+}
+
+img {
+  float: left;
+}
+
+div{
+background-color: rgba(255,255,255,80%);
+
+	 }
+
+.Me{
+
+	 text-indent: 300px;
+}
+
+.next{right: 500px;
+	top: 120px;
+position: absolute;}
+.back{
+right: 900px;
+	top: 120px;
+position: absolute;
+
+}
+.home{right: 700px;
+	top: 120px;
+position: absolute;}
+
+#map{
+	 width: 38%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+    overflow: auto;
+ 
+}
+#map1{
+	 width: 71%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+    overflow: auto;
+ 
+}
+#map2{
+	 width: 55%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+    overflow: auto;
+ 
+}
+
+#map3{
+	 width: 65%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+    overflow: auto;
+ 
+}
+
+#map4{
+	 width: 36%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+    overflow: auto;
+ 
+}
+#map5{
+	 width: 36%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+    overflow: auto;
+ 
+}
+#map6{
+	 width: 36%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+    overflow: auto;
+ 
+}
