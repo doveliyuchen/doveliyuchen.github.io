@@ -2,7 +2,7 @@ body {
   background-image: url("https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/02/02/ChMkJ1bKxWuICx6yAAndJjPxf_cAALHVgMnhtYACd0-223.jpg");
   /* font-family: Courier New; */
   font-family: 'Nunito', sans-serif;
-background-size: 100%, auto;
+	background-size:100%, auto;
 
 }
 
@@ -16,7 +16,7 @@ h3 {
 main{
 font-family: 'Nunito', sans-serif;
 	background-color: rgba(255,230,255,70%);
-	 padding: 50px;
+	 padding: 0vw;
 
 
 }
@@ -33,13 +33,18 @@ font-family: 'Nunito', sans-serif;
   font-weight: bold;
 }
 
+
+
 td{
+
 	font-family: 'Open Sans', ;
-border-radius: 15px;
-	padding: 2vh 13vw;
-	 text-align: center;
-	 border-spacing: 2vh;
-	   font-weight: 5px;
+	border-radius: 2vw;
+	padding: 2vh 0vw;
+	text-align: center;
+	border-spacing: 2vh;
+	font-weight: 5px;
+	 
+	
 }
 img{
 
