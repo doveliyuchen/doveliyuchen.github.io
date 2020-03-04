@@ -86,20 +86,15 @@ body {
   /* font-family: Courier New; */
   font-family: 'Nunito', sans-serif;
 background-size: 100%, auto;
-
+margin-left: 12vw;
+margin-right: 12vw;
 }
 .button{
 
 background-color: white;
 
 }
-body {
-  background-image: url("3.jpg");
-  /* font-family: Courier New; */
-  font-family: 'Nunito', sans-serif;
-background-size: 100%, auto;
 
-}
 
 h3 {
   text-align: center;
@@ -145,6 +140,7 @@ a:active {
 } 
 
 ul{
+  margin-left: 5vw;
   display: inline-block;
   font-family: 'Georgia', serif;
 padding-left: 250px;
@@ -165,17 +161,17 @@ background-color: rgba(255,255,255,80%);
 
 
 #map{
-   width: 12vw;
+   width: 15vw;
    height: 19vh;
   display: inline-block;
-  margin-left: 15vw;
+  margin-left: 0vw;
   margin-right: 0vw;
     overflow: auto;
  
 }
 #map1{
    width: 100%;
-  display: block;
+  display: inline-flex;
   margin-left: auto;
   margin-right: auto;
     overflow: auto;
@@ -184,7 +180,7 @@ background-color: rgba(255,255,255,80%);
 #map2{
    width: 100%;
 
-  display: block;
+  display: inline-flex;
   margin-left: auto;
   margin-right: auto;
     overflow: auto;
