@@ -1,0 +1,101 @@
+
+
+body {
+	/*  background-image: url("../1.png");*/
+	/* font-family: Courier New; */
+	background-image: url(1.png);
+	background-size: 100%, auto;
+
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+	background-size: 100%, auto;
+	text-align:center;
+	align-items: center;
+
+}
+.wrapper > div{
+	font-size: 20px;
+	color:"black"
+
+
+
+}
+.one {
+
+	grid-column: 1/1;
+	grid-row: 1/2;
+	border-right: dashed;
+
+
+}
+ a{
+
+	 color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+
+
+}
+
+ a:hover {
+
+background-color: #ddd;
+  color: black;
+
+
+}
+.two { 
+
+	grid-column: 2 / 3;
+	grid-row: 1/ 2;
+	border-right: dashed;
+
+}
+.three {
+
+	grid-column: 3/3;
+	grid-row: 1 / 2;
+
+}
+.four{
+
+
+	grid-column: 2/3;
+	grid-row:auto ;
+}
+
+.five{
+
+
+	grid-column: 5/1;
+	grid-row:3/5 ;
+	padding: 10vh;
+	border: dotted;
+}
+
+main{
+	font-family: 'Nunito', sans-serif;
+	background-color: rgba(255,230,255,70%);
+	padding: 5px;
+
+
+}
+
+
+
+iframe{
+
+
+}
+input{
+
+
+	border-radius: 50px;
+	background-color: pink;
+}
