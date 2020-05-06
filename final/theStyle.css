@@ -1,0 +1,19 @@
+#img{
+            position: absolute;
+            cursor:none;
+        }
+
+
+ body{
+ 	background-image: url(2.png);
+ 	background-size: cover;
+
+ 	cursor:none;
+ }
+
+ main{
+
+
+
+ 	cursor: none;
+ }
