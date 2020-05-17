@@ -13,13 +13,16 @@ main {
     top: 0;
     left:0;
     right: 0;
-    margin-bottom:0;
+
     background-color: rgba(242,201,255,0.7)
+  
 }
 
 svg{
 
   display: inline;
+ padding: 200;
+  z-index: 20;
 }
 
 
@@ -107,5 +110,11 @@ margin-left: 42vw;
 
 position: fixed; 
 left: 35vw;
-top: 20vh;
+top: 28vh;
+}
+
+#text{
+
+margin-right: 10vw;
+text-align: center;
 }

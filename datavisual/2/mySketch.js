@@ -165,7 +165,7 @@ function drawout1(){
   
  
 
-	let svg = d3.select('body').append('svg').attr('width', '900').attr('height', '900').style('margin-left', '25vw').style('display', 'block').style('justify-content', 'center').style('background-color','rgba(255,255,255,0.7)').style('margin-top', '5vw');
+	let svg = d3.select('body').append('svg').attr('width', '900').attr('height', '900').style('margin-left', '20vw').style('display', 'block').style('justify-content', 'center').style('background-color','rgba(255,255,255,0.7)').style('margin-top', '5vw');
   var width = 565;
   var height = 220;
   
@@ -312,14 +312,14 @@ function drawout(){
   
  
 
-	let svg = d3.select('body').append('svg').attr('width', '900').attr('height', '900').style('margin-left', '25vw').style('display', 'block').style('justify-content', 'center').style('background-color','rgba(255,255,255,0.7)').style('margin-top', '5vw');
+	let svg = d3.select('body').append('svg').attr('width', '900').attr('height', '900').style('margin-left', '20vw').style('display', 'block').style('justify-content', 'center').style('background-color','rgba(255,255,255,0.7)').style('margin-top', '5vw');
 
   var width = 565;
   var height = 220;
   
  var array=[]
 
-    var margin = { top: 167,right: 50, bottom: 50, left: 40 };
+    var margin = { top: 165,right: 50, bottom: 50, left: 40 };
 
   var array1=[]
 for (i=0;i<FluReport.length;i++){
