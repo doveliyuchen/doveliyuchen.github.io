@@ -1,0 +1,13 @@
+body {
+  background-color: lightblue;
+}
+p {
+  background-color: lightyellow;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 120%;
+}
+
+figcaption {
+  background-color: FloralWhite;
+text-align: center;
+}
