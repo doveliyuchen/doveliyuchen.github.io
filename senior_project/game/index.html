@@ -1,100 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>
-		Playing as Instinct
-	</title>
-	<link rel="stylesheet" type="text/css" href="../theStyle.css">
-	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <title>
+        Playing as Instinct
+    </title>
+    <link rel="stylesheet" type="text/css" href="theStyle.css">
+    <link rel="stylesheet" type="text/css" href="../theStyle.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    
+    <script type="text/javascript" src="script.js"></script>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
 </head>
+
 <body>
-
-  <div class="sidebar">
-    <ul>
-        <li><a class="ion-ios-home" href="../index.html"></a></li>
-        <li class="this_page"><a class="ion-ios-game-controller-b" href="index.html"></a></li>
-        <li><a class="ion-ios-search" href="../research/index.html"></a></li>
-        <li><a class="ion-ios-person" href="../self/index.html"></a></li>
-     
-
-    </ul>
-</div>
-<a class="btn"></a>
-
-<script type="text/javascript">
-    $('.btn').on('click',function () {
+    <div class="sidebar">
+        <ul>
+            <li><a class="ion-ios-home" href="../index.html"></a></li>
+            <li class="this_page"><a class="ion-ios-game-controller-b" href="index.html"></a></li>
+            <li><a class="ion-ios-search" href="../research/index.html"></a></li>
+            <li><a class="ion-ios-person" href="../self/index.html"></a></li>
+        </ul>
+    </div>
+    <a class="btn"></a>
+    <script type="text/javascript">
+    $('.btn').on('click', function() {
         $('.btn').toggleClass('btnc');
         $('.sidebar').toggleClass('side');
 
-    })
-</script>
-
-<script type="text/javascript">
-	!function(e, t, a) {
-    function r() {
-        for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
-        requestAnimationFrame(r)
-    }
-    function n() {
-        var t = "function" == typeof e.onclick && e.onclick;
-        e.onclick = function(e) {
-            t && t(),
-            o(e)
-        }
-    }
-    function o(e) {
-        var a = t.createElement("div");
-        a.className = "heart",
-        s.push({
-            el: a,
-            x: e.clientX - 5,
-            y: e.clientY - 5,
-            scale: 1,
-            alpha: 1,
-            color: c()
-        }),
-        t.body.appendChild(a)
-    }
-    function i(e) {
-        var a = t.createElement("style");
-        a.type = "text/css";
-        try {
-            a.appendChild(t.createTextNode(e))
-        } catch(t) {
-            a.styleSheet.cssText = e
-        }
-        t.getElementsByTagName("head")[0].appendChild(a)
-    }
-    function c() {
-        return "rgb(" + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + ")"
-    }
-    var s = [];
-    e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame ||
-    function(e) {
-        setTimeout(e, 1e3 / 60)
-    },
-    i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),
-    n(),
-    r()
-} (window, document);
-
-</script>
-
-
-<!-- 
-
-————————————————
-版权声明：本文为CSDN博主「Bob drudgery」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/Bobdragery/article/details/90757500
--->
-  <main>
-  	<div class="banner">Play as Instinct</div>
-
-
-  </main>
+    });
+    </script>
+    <main>
+        <div class="banner">Play as Instinct</div>
+        <section class="mast">
+            <figure class="mast__bg" style="background-image:url(1.jpg)"></figure>
+            <header class="mast__header">
+                <p class="mast__text js-spanize">
+                    This is the story happened between you and your parents, and it may or may not happen between you and your kids.</p>
+                <div class="container">
+                    <button class="learn-more" onclick="window.location.href='1.html'">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Learn More</span>
+                    </button>
+                </div>
+            </header>
+            <script type="text/javascript">
+            (function($) {
+                var s,
+                    spanizeLetters = {
+                        settings: {
+                            letters: $('.js-spanize'),
+                        },
+                        init: function() {
+                            s = this.settings;
+                            this.bindEvents();
+                        },
+                        bindEvents: function() {
+                            s.letters.html(function(i, el) {
+                                //spanizeLetters.joinChars();
+                                var spanizer = $.trim(el).split("");
+                                return '<span>' + spanizer.join('</span><span>') + '</span>';
+                            });
+                        },
+                    };
+                spanizeLetters.init();
+            })(jQuery);
+            </script>
+        </section>
+    </main>
 </body>
+
 </html>
+<!-- the text style was inspired from https://codepen.io/StephenScaff/pen/oLBqmw >
