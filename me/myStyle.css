@@ -5,6 +5,7 @@ html, body {
   background-size: 100%, auto;
   font-family: 'Nunito', sans-serif;
 }
+
 canvas {
   display: block;
   background: rgba(172,255,247,70%); 

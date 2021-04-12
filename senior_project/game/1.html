@@ -4,20 +4,30 @@
 	<title>
 		Playing as Instinct
 	</title>
-	<link rel="stylesheet" type="text/css" href="../theStyle.css">
+    <script src="p5.js"type="text/javascript"></script>
+    <script src="p5.sound.min.js"type="text/javascript"></script>
+    <script src="p5.play.js" type="text/javascript"></script> 
+	
 	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    
+    <link rel="stylesheet" type="text/css" href="../theStyle.css">
+    <link rel="stylesheet" type="text/css" href="theStyle.css">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
 </head>
 <body>
+<div class="wrap">
+  <div class="loading">
+    <div class="bounceball"></div>
+    <div class="text">NOW LOADING</div>
+  </div>
+</div>
 
   <div class="sidebar">
     <ul>
         <li><a class="ion-ios-home" href="../index.html"></a></li>
-        <li><a class="ion-ios-game-controller-b" href="../game/index.html"></a></li>
-        <li class="this_page"><a class="ion-ios-search" href="index.html"></a></li>
+        <li><a class="ion-ios-game-controller-b" href="index.html"></a></li>
+        <li><a class="ion-ios-search" href="../research/index.html"></a></li>
         <li><a class="ion-ios-person" href="../self/index.html"></a></li>
      
 
@@ -34,26 +44,30 @@
 </script>
 
 
-  <main>
-  	<div class="banner">Play as Instinct</div>
-    <div><p>Do you have any kid(s) now?</p></div>
-    
-    <div class="container">
-                    <button class="learn-more" onclick="window.location.href='parent/q0.html'">
-                        <span class="circle" aria-hidden="true">
-                            <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text">Yes</span>
-                    </button>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <button class="learn-more" onclick="window.location.href='kid/q0.html'">
-                        <span class="circle" aria-hidden="true">
-                            <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text">No</span>
-                    </button>
-                </div>
 
+  <main>
+
+  	<script src="sketch.js" ></script>
+        <div class="banner">Play as Instinct</div>
+
+        <script type="text/javascript">
+  
+const wrap = document.querySelector('.wrap');
+
+const fadeEffect = setInterval(() => {
+  // if we don't set opacity 1 in CSS, then   //it will be equaled to "", that's why we   // check it
+  if (!wrap.style.opacity) {
+    wrap.style.opacity = 1;
+  }
+  if (wrap.style.opacity > 0) {
+    wrap.style.opacity -= 0.1;
+  } else {
+    clearInterval(fadeEffect);
+  }
+}, 200);
+
+
+</script>
   </main>
 </body>
 </html>

@@ -22,3 +22,4 @@ Spanizer
   };
   spanizeLetters.init();
 })(jQuery);
+
