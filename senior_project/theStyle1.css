@@ -1,0 +1,362 @@
+@import "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+
+body, html {
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    background-image: url(2.jpg);
+    background-size: 80% ;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.banner{
+    background-image: url(1.jpg);
+    height: 3 vh;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    padding: 1px;
+
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: 1.1em;
+  font-family: inherit;
+}
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
+
+.container {
+    margin-left: 35vw;
+
+    display: inline-block;
+}
+
+p{
+    color: white;
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 3em;
+}
+
+
+.sidebar {
+    float: left;
+    width: 60px;
+    margin-left: -100px;
+    height: 100%;
+    background-color: #2c3e50;
+    overflow: hidden;
+    transition: 0.8s all;
+}
+.this_page {
+
+    background-color: #1F1A21;
+}
+
+.side {
+    margin-left: 0;
+}
+
+/*靠边*/
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*去点*/
+.sidebar ul li {
+    list-style: none;
+}
+
+/*去下划线*/
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    height: 80px;
+    width: 100%;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    display: block;
+    transition: 0.6s all;
+}
+
+.sidebar ul li a:hover {
+    background: black;
+}
+
+
+.btn {
+    float: left;
+    padding: 0 10px;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    font-family: Ionicons;
+    cursor: pointer;
+
+}
+
+.btn:before {
+    content: '\f20d';
+}
+
+.btnc:before {
+    content: '\f12a';
+}
+
+$ease-cb: cubic-bezier(.19,1,.22,1);
+
+@mixin nth-trans-delay($delay_items: 7, $delay_time: 0.2s){
+@for $i from 1 through $delay_items {
+  &:nth-child(#{$i}) {   
+   transition-delay: $delay_time * $i; 
+  }
+ }
+}
+
+//--------------------------
+//  nth-ani-delay()
+//  @description: Animation Delay on nth-childs
+//  @param: $delay_items: [7] - number of nth-of-type items to create
+//  @param: $delay_time:[1.5s] - transition-dealy value
+//--------------------------
+@mixin nth-ani-delay($delay_items: 7, $delay_time: 0.2s){
+@for $i from 1 through $delay_items {
+  &:nth-child(#{$i}) {   
+   animation-delay: $delay_time * $i; 
+  }
+ }
+}
+//--------------------------
+//  bg-overlay()
+//  @description:pseduo overlay element  
+//  @param: $bg_hex: [$color-dark] - hex value for rgba conversion
+//  @param: $bg_opacity:[0.6] - alpha transparency level
+//  @param: $top_layer: element or class name for higher z-index layer
+//--------------------------
+@mixin bg-overlay($bg_hex: #111, $bg_opacity: 0.6, $top_layer: 'header') {
+  &:after {
+    z-index: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba($bg_hex, $bg_opacity);
+  }
+  
+  // Layer atop overlay
+  & > #{$top_layer}{
+    z-index: 2;
+    position: relative;
+  }
+}
+//Setups
+*, *:before, *:after {
+  box-sizing: border-box; 
+}
+
+
+
+
+
+
+
+.game {
+
+    text-align: center;
+    position: relative;
+    float: left;
+    color: #d7b94c;
+    font-family: 'Inconsolata', Consolas, monospace;
+    font-size: 4em;
+    margin:100px;
+    white-space: pre;
+}
+
+.game span{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #1d1f20;
+    width: 100%;
+    border-left: .1em solid transparent;
+    -webkit-animation: typing 3s steps(16) forwards,
+                                         cursor 1s infinite;
+    animation: typing 0.7s 0s ease both,
+                         cursor 1s infinite;
+
+    @include nth-ani-delay(180, 0.05s);
+}
+/* Animation */
+
+@-webkit-keyframes cursor{
+    50% { border-color: white;}
+}
+@keyframes typing{
+    0%   { opacity: 0; text-shadow: 0px 0px 1px rgba(255,255,255,0.1)}
+    66%  { opacity: 1; text-shadow: 0px 0px 20px rgba(255,255,255,0.9) }
+    77%   { opacity: 1;  }
+    100% { opacity:0.7; text-shadow: 0px 0px 20px rgba(255,255,255,0.0)}
+}
+}
+@keyframes cursor{
+    50% { border-color: white;}
+}
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.text {
+  color: #FFA4AB;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.bounceball {
+  position: relative;
+  display: inline-block;
+  height: 37px;
+  width: 15px;
+}
+.bounceball:before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #FFA4AB;
+  transform-origin: 50%;
+  -webkit-animation: bounce 1000ms alternate infinite ease;
+          animation: bounce 1000ms alternate infinite ease;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    top: 30px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    transform: scaleX(2);
+  }
+  35% {
+    height: 15px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 30px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    transform: scaleX(2);
+  }
+  35% {
+    height: 15px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
+}
+
+
+
+
+
+
+————————————————
+版权声明：本文为CSDN博主「Bob drudgery」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/Bobdragery/article/details/90757500
