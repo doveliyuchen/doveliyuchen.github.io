@@ -28,7 +28,59 @@
 		</div>
 	</div>
 	<!-- END: Preloader -->
+	<!-- START: Heart -->
 
+	<script type="text/javascript">
+	!function(e, t, a) {
+    function r() {
+        for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+        requestAnimationFrame(r)
+    }
+    function n() {
+        var t = "function" == typeof e.onclick && e.onclick;
+        e.onclick = function(e) {
+            t && t(),
+            o(e)
+        }
+    }
+    function o(e) {
+        var a = t.createElement("div");
+        a.className = "heart",
+        s.push({
+            el: a,
+            x: e.clientX - 5,
+            y: e.clientY - 5,
+            scale: 1,
+            alpha: 1,
+            color: c()
+        }),
+        t.body.appendChild(a)
+    }
+    function i(e) {
+        var a = t.createElement("style");
+        a.type = "text/css";
+        try {
+            a.appendChild(t.createTextNode(e))
+        } catch(t) {
+            a.styleSheet.cssText = e
+        }
+        t.getElementsByTagName("head")[0].appendChild(a)
+    }
+    function c() {
+        return "rgb(" + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + ")"
+    }
+    var s = [];
+    e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame ||
+    function(e) {
+        setTimeout(e, 1e3 / 60)
+    },
+    i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),
+    n(),
+    r()
+} (window, document);
+
+</script>
+	<!-- END: Heart -->
 
 	<!-- START: Aside -->
 	<aside class="aside">
@@ -64,30 +116,20 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html"><i class="lni-home"></i>Home</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="resume.html"><i class="lni-briefcase"></i>resume</a>
+                            <a class="nav-link" href="Li,Yuchen-resume_CN&EN.pdf" download="Li,Yuchen-resume_CN&EN.pdf"><i class="lni-graduation"></i>Resume</a>
+                   
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="work.html"><i class="lni-graduation"></i>Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html"><i class="lni-offer"></i>Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html"><i class="lni-pencil"></i></i>Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html"><i class="lni-phone-handset"></i>Contact</a>
-                        </li>
+              
                     </ul>
                 </div>
 
                	<div class="aside-footer">
                 	<ul class="list-unstyled list-inline">
-                        <li class="list-inline-item"><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="lni-skype"></i></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="lni-youtube"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="lni-linkedin-original"></i></a></li>
+                       <li class="list-inline-item"><a href="/assets/images/1.jpg" target="_blank"><i class="lni-wechat"></i></i></a></li>
+                        <li class="list-inline-item"><a href="mailto:yl6394@nyu.edu" target="_blank"><i class="lni-envelope"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/yuchen-li-3696b3183/" target="_blank"><i class="lni-linkedin-original"></i></a></li>
                     </ul>
                 </div>
 	        </nav>
@@ -109,134 +151,127 @@
     			<div class="row">
     				<div class="col-6 col-md-4">
     					<div class="section-head">
-							<span>TAKE A LOOK AT</span>
-							<h2>Portfolio</h2>
+							<span>Image Design</span>
+							<h2>Poster Collection</h2>
 						</div>	
     				</div>
-    				<div class="col-md-8">
-    					<ul id="filter" class="filter mt-4">
-							<li class="active" data-group="all">All</li>
-							<li data-group="slideshow">Slideshow</li>
-							<li data-group="video">Video</li>
-							<li data-group="image">Image</li>
-						</ul>
-    				</div>	
+    				
     			</div>
 
 				<ul class="list-items-container row">
 
-					<li class="col-6 col-md-4 list-item" data-groups="all slideshow">
-						<figure>
-							<img src="assets/images/p4-4.jpg" alt="p1">
-							<figcaption>
-								<a href="assets/images/p4-4.jpg" class="simple-ajax-popup"></a>
-								<div class="caption-inner">
-									<h3 class="portfolio-item-title">Some work</h3>
-									<div class="portfolio-item-desc">Slideshow</div>
+					<li class="col-6 col-md-4 list-item" style="height: 500px; margin-top:5px;">
+						<figure style="height: 500px;margin-top:5px;">
+							<img src="assets/poster/1.png" alt="p1" style="height: 500px;margin-top:5px;">
+							<figcaption style="height: 500px;margin-top:5px;">
+								<a href="assets/poster/1.png" class="simple-ajax-popup" style="height: 500px;margin-top:5px;"></a>
+								<div class="caption-inner" >
+									<h3 class="portfolio-item-title" >Cooperation</h3>
+					
 								</div>
 							</figcaption>
 						</figure>
 					</li>
 
-					<li class="col-6 col-md-4 list-item" data-groups="all video">
-						<figure>
-							<img src="assets/images/p5-5.jpg" alt="p2">
-							<figcaption>
-								<a href="assets/images/p5-5.jpg" class="simple-ajax-popup"></a>
+					<li class="col-6 col-md-4 list-item" style="height: 500px; margin-top:5px;">
+						<figure style="height: 500px;margin-top:5px; ">
+							<img src="assets/poster/2.png" alt="p2" style="height: 500px;margin-top:5px; ">
+							<figcaption style="height: 500px; margin-top:5px;">
+								<a href="assets/poster/2.png" class="simple-ajax-popup" style="height: 500px;margin-top:5px; "></a>
 								<div class="caption-inner">
-									<h3 class="portfolio-item-title">Some work</h3>
-									<div class="portfolio-item-desc">Video</div>
+									<h3 class="portfolio-item-title">Pet shop Cat theme</h3>
+		
 								</div>
 							</figcaption>
 						</figure>
 					</li>
 
-					<li class="col-6 col-md-4 list-item" data-groups="all image">
-						<figure>
-							<img src="assets/images/p3-3.jpg" alt="p3">
-							<figcaption>
-								<a href="assets/images/p3-3.jpg" class="simple-ajax-popup"></a>
+					<li class="col-6 col-md-4 list-item" style="height: 500px; margin-top:5px;">
+						<figure style="height: 500px; margin-top:5px;">
+							<img src="assets/poster/3.png" alt="p3" style="height: 500px; ">
+							<figcaption style="height: 500px; ">
+								<a href="assets/poster/3.png" class="simple-ajax-popup" style="height: 500px; "></a>
 								<div class="caption-inner">
-									<h3 class="portfolio-item-title">Some work</h3>
-									<div class="portfolio-item-desc">Image</div>
+									<h3 class="portfolio-item-title">Pet shop Rabbit theme</h3>
+									
 								</div>
 							</figcaption>
 						</figure>
 					</li>
 
-					<li class="col-6 col-md-4 list-item" data-groups="all slideshow">
-						<figure>
-							<img src="assets/images/p1-1.jpg" alt="p4">
-							<figcaption>
-								<a href="assets/images/p1-1.jpg" class="simple-ajax-popup"></a>
+					<li class="col-6 col-md-4 list-item" style="height: 500px; top: 10px;margin-top:5px;">
+						<figure style="height: 500px; margin-top:5px;">
+							<img src="assets/poster/4.png" alt="p4" style="height: 500px; margin-top:5px;">
+							<figcaption style="height: 500px; margin-top:5px;">
+								<a href="assets/poster/4.png" class="simple-ajax-popup" style="height: 500px; margin-top:5px;"></a>
 								<div class="caption-inner">
-									<h3 class="portfolio-item-title">Some work</h3>
-									<div class="portfolio-item-desc">Slideshow</div>
+									<h3 class="portfolio-item-title">Show Poster</h3>
+					
 								</div>
 							</figcaption>
 						</figure>
 					</li>
 
-					<li class="col-6 col-md-4 list-item" data-groups="all video">
-						<figure>
-							<img src="assets/images/p2-2.jpg" alt="p5">
-							<figcaption>
-								<a href="assets/images/p2-2.jpg" class="simple-ajax-popup"></a>
+					<li class="col-6 col-md-4 list-item" style="height: 500px;margin-top:5px; ">
+						<figure style="height: 500px; margin-top:5px;">
+							<img src="assets/poster/5.png" alt="p5" style="height: 500px; margin-top:5px;">
+							<figcaption style="height: 500px; margin-top:5px;">
+								<a href="assets/poster/5.png" class="simple-ajax-popup" style="height: 500px; margin-top:5px;"></a>
 								<div class="caption-inner">
-									<h3 class="portfolio-item-title">Some work</h3>
-									<div class="portfolio-item-desc">Video</div>
+									<h3 class="portfolio-item-title">Pet shop dog theme</h3>
+							
 								</div>
 							</figcaption>
 						</figure>
 					</li>
 
-					<li class="col-6 col-md-4 list-item" data-groups="all image">
-						<figure>
-							<img src="assets/images/p6-6.jpg" alt="p6">
-							<figcaption>
-								<a href="assets/images/p6-6.jpg" class="simple-ajax-popup"></a>
+					<li class="col-6 col-md-4 list-item" style="height: 500px; margin-top:5px;">
+						<figure style="height: 500px; margin-top:5px;">
+							<img src="assets/poster/6.png" alt="p6" style="height: 500px; margin-top:5px;">
+							<figcaption style="height: 500px; margin-top:5px;">
+								<a href="assets/poster/6.png" class="simple-ajax-popup" style="height: 500px; margin-top:5px;"></a>
 								<div class="caption-inner">
-									<h3 class="portfolio-item-title">Some work</h3>
-									<div class="portfolio-item-desc">Image</div>
+									<h3 class="portfolio-item-title">Pet shop Bird theme</h3>
+						
 								</div>
 							</figcaption>
 						</figure>
 					</li>
 
-					<li class="col-6 col-md-4 list-item" data-groups="all image">
-						<figure>
-							<img src="assets/images/p7-7.jpg" alt="p6">
-							<figcaption>
-								<a href="assets/images/p7-7.jpg" class="simple-ajax-popup"></a>
+					<li class="col-6 col-md-4 list-item" style="height: 500px; margin-top:5px;">
+						<figure style="height: 500px; margin-top:5px;">
+							<img src="assets/poster/7.png" alt="p6" style="height: 500px; margin-top:5px;">
+							<figcaption style="height: 500px; margin-top:5px;">
+								<a href="assets/poster/7.png" class="simple-ajax-popup" style="height: 500px; margin-top:5px;"></a>
 								<div class="caption-inner">
-									<h3 class="portfolio-item-title">Some work</h3>
-									<div class="portfolio-item-desc">Image</div>
+									<h3 class="portfolio-item-title">Book History</h3>
+	
 								</div>
 							</figcaption>
 						</figure>
 					</li>
 
-					<li class="col-6 col-md-4 list-item" data-groups="all image">
-						<figure>
-							<img src="assets/images/p8-8.jpg" alt="p6">
-							<figcaption>
-								<a href="assets/images/p8-8.jpg" class="simple-ajax-popup"></a>
+					<li class="col-6 col-md-4 list-item" style="height: 500px; margin-top:5px;">
+						<figure style="height: 500px; margin-top:5px;">
+							<img src="assets/poster/8.png" alt="p6" style="height: 500px; margin-top:5px;">
+							<figcaption style="height: 500px; margin-top:5px;">
+								<a href="assets/poster/8.png" class="simple-ajax-popup" style="height: 500px; margin-top:5px;"></a>
 								<div class="caption-inner">
-									<h3 class="portfolio-item-title">Some work</h3>
-									<div class="portfolio-item-desc">Image</div>
+									<h3 class="portfolio-item-title">Cooperation</h3>
+							
 								</div>
 							</figcaption>
 						</figure>
 					</li>
 
-					<li class="col-6 col-md-4 list-item" data-groups="all slideshow">
-						<figure>
-							<img src="assets/images/p9-9.jpg" alt="p6">
-							<figcaption>
-								<a href="assets/images/p9-9.jpg" class="simple-ajax-popup"></a>
+					<li class="col-6 col-md-4 list-item" style="height: 500px; margin-top:5px;">
+						<figure style="height: 500px; margin-top:5px;">
+							<img src="assets/poster/9.png" alt="p6" style="height: 500px; margin-top:5px;">
+							<figcaption style="height: 500px; margin-top:5px;">
+								<a href="assets/poster/9.png" class="simple-ajax-popup" style="height: 500px; margin-top:5px;"></a>
 								<div class="caption-inner">
-									<h3 class="portfolio-item-title">Some work</h3>
-									<div class="portfolio-item-desc">Image</div>
+									<h3 class="portfolio-item-title">Invitation</h3>
+						
 								</div>
 							</figcaption>
 						</figure>
@@ -246,96 +281,7 @@
 			</div>
     	</section>
 
-		<!-- START: TESTIMONY -->
-		<section class="section section-dark section-testimony" id="testimony">
-			<div class="container">
-				<div class="section-head text-center">
-					<span>Kind Words</span>
-					<h2>testimonial</h2>
-				</div>
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="swiper-container swiper-testimony wow fadeInUp"  data-wow-duration="1.5s">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide single-testimonials ">
-									<div class="single-testimonials-in mx-auto text-center">
-										<div class="single-testimonials-head p-5">
-											<p>"Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
-										</div>	
-										<div class="single-testimonials-foot mx-auto mt-4">
-											<img src="assets/images/avatar1.jpg" alt="" class="mx-auto b-box">
-											<h4 class="mt-3 font-weight-bold">Anj Joseph</h4>
-											<span class="mt-1 d-block">Web Developer</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="swiper-slide single-testimonials ">
-									<div class="single-testimonials-in mx-auto text-center">
-										<div class="single-testimonials-head p-5">
-											<p>"Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
-										</div>	
-										<div class="single-testimonials-foot mx-auto mt-4">
-											<img src="assets/images/avatar1.jpg" alt="" class="mx-auto b-box">
-											<h4 class="mt-3 font-weight-bold">Anj Joseph</h4>
-											<span class="mt-1 d-block">Web Developer</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="swiper-slide single-testimonials ">
-									<div class="single-testimonials-in mx-auto text-center">
-										<div class="single-testimonials-head p-5">
-											<p>"Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
-										</div>	
-										<div class="single-testimonials-foot mx-auto mt-4">
-											<img src="assets/images/avatar1.jpg" alt="" class="mx-auto b-box">
-											<h4 class="mt-3 font-weight-bold">Anj Joseph</h4>
-											<span class="mt-1 d-block">Web Developer</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="swiper-slide single-testimonials ">
-									<div class="single-testimonials-in mx-auto text-center">
-										<div class="single-testimonials-head p-5">
-											<p>"Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
-										</div>	
-										<div class="single-testimonials-foot mx-auto mt-4">
-											<img src="assets/images/avatar1.jpg" alt="" class="mx-auto b-box">
-											<h4 class="mt-3 font-weight-bold">Anj Joseph</h4>
-											<span class="mt-1 d-block">Web Developer</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="swiper-slide single-testimonials ">
-									<div class="single-testimonials-in mx-auto text-center">
-										<div class="single-testimonials-head p-5">
-											<p>"Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
-										</div>	
-										<div class="single-testimonials-foot mx-auto mt-4">
-											<img src="assets/images/avatar1.jpg" alt="" class="mx-auto b-box">
-											<h4 class="mt-3 font-weight-bold">Anj Joseph</h4>
-											<span class="mt-1 d-block">Web Developer</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-							<div class="swiper-pagination"></div>
-						</div>
-
-						<div class="testimony-nav">
-							<a href="#" class="swiper-button-next"></a>
-							<a href="#" class="swiper-button-prev"></a>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END: TESTIMONY -->
+		
 
 		<!--START: FOOTER-->
 		<footer class="footer section section-light">

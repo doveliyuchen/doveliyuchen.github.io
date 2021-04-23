@@ -99,8 +99,14 @@ table {
 body {
     overflow-x: hidden;
     background: #50a3a2;
-    background: linear-gradient(135deg, rgb(165, 155, 224) 0%, rgba(242,147,113,1) 100%);
-    background: linear-gradient(135deg, rgb(165, 155, 224) 0%, rgba(242,147,113,1) 100%);
+
+    
+
+
+    background: linear-gradient(135deg, rgba(165, 155, 224,0.7) 0%, rgba(242,147,113,0.7) 100%);
+    background: linear-gradient(135deg, rgba(165, 155, 224,0.7) 0%, rgba(242,147,113,0.7) 100%);
+
+
 }
 
 ::selection {
@@ -468,7 +474,7 @@ b, strong {
 }
 
 .navbar-nav .nav-link {
-    font-size: 12px;
+    font-size: 17px;
     letter-spacing: 2px;
     position: relative;
     display: inline-block;
@@ -614,11 +620,19 @@ b, strong {
 /* ---------------------------------------------- */
 
 .section-home {
-    height: 100vh;
+    height: 99vh;
     position: relative;
     background-image: url("../images/banner1.jpg");
-    background-size: cover;
+    background-size: 100%,100%;
     background-position: center;
+}
+
+.row1{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    margin-left: -15px;
 }
 
 .glass {
@@ -735,7 +749,7 @@ b, strong {
 .about-img {
     height: 500px;
     object-fit: cover;
-    width: 100%;
+    width: 80%;
 }
 
 
@@ -927,12 +941,13 @@ b, strong {
     display: flex;
     overflow: hidden;
     align-items: flex-end;
-    padding: 20px;
+    padding: 40px;
     justify-content: left;
     transition: .5s;
 }
 
 .list-item .simple-ajax-popup {
+
     position: absolute;
     left: 0;
     right: 0;
@@ -943,7 +958,7 @@ b, strong {
 }
 
 .list-item .caption-inner {
-    color: #fff;
+    color: black;
     position: relative;
     bottom: -50px;
     opacity: 0;
@@ -952,14 +967,14 @@ b, strong {
 }
 
 .list-item h3.portfolio-item-title {
-    color: #fff;
+    color: black;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 18px;
 }
 
 .portfolio-item-desc {
-    color: #ddd;
+    color: black;
 }
 
 .list-item:hover .caption-inner {
@@ -968,8 +983,73 @@ b, strong {
     opacity: 1;
 }
 
-.list-item:hover figcaption {
-    background: rgba(0,0,0,0.5);
+.list-item:hover .figcaption1 {
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-image: url(../images/1.png);
+
+}
+.list-item:hover .figcaption2 {
+
+    background-image: url(../images/2.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+.list-item:hover .figcaption3 {
+
+    background-image: url(../images/3.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+.list-item:hover .figcaption4 {
+
+    background-image: url(../images/4.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+.list-item:hover .figcaption5 {
+
+    background-image: url(../images/5.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+.list-item:hover .figcaption6 {
+
+    background-image: url(../images/6.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+.list-item:hover .figcaption7 {
+
+    background-image: url(../images/7.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+.list-item:hover .figcaption8 {
+
+    background-image: url(../images/8.png);
+    background-position: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+.list-item:hover .figcaption9 {
+
+    background-image: url(../images/9.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+.list-item:hover figure {
+    transform: scale(1.1,1.1);
+
 }
 
 /* ---------------------------------------------- 
@@ -1166,6 +1246,8 @@ b, strong {
 * 12. Blog
 /* ---------------------------------------------- */
 
+
+
 .blog-list--img {
     position: relative;
 }
@@ -1173,7 +1255,7 @@ b, strong {
 .blog-list--img img {
     height: 300px;
     object-fit: cover;
-    width: 100%;
+    width: 100vw;
 }
 
 .blog-list--desc h3 {
@@ -1252,6 +1334,9 @@ b, strong {
 .page-item.active .page-link {
     background-color: #333;
     border-color: #333;
+}
+p{
+    padding: 20px;
 }
 
 /* ---------------------------------------------- 

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome to Yuchen's Portfolio</title>
+	<meta name="description" content="Welcome to Yuchen's Portfolio" />
+
+	<meta name="author" content="Yuchen" />
+	<meta name="theme-color" content="#2a2d35">
+
+	<!-- Vendor Css-->
+	<link rel="stylesheet" href="assets/css/vendor.css" />
+	<link rel="stylesheet" href="assets/css/LineIcons.min.css" />	
+
+	<!-- TamTemplate style Css -->
+	<link href="assets/css/tam.css" rel="stylesheet">
+
+	<!-- Custom style Css -->
+	<link href="assets/css/custom.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+	<!-- START: Preloader -->
+	<div id="preloader" class="preloader">
+		<div class="spinner-grow text-dark" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	<!-- END: Preloader -->
+	<!-- START: Heart -->
+
+	<script type="text/javascript">
+	!function(e, t, a) {
+    function r() {
+        for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+        requestAnimationFrame(r)
+    }
+    function n() {
+        var t = "function" == typeof e.onclick && e.onclick;
+        e.onclick = function(e) {
+            t && t(),
+            o(e)
+        }
+    }
+    function o(e) {
+        var a = t.createElement("div");
+        a.className = "heart",
+        s.push({
+            el: a,
+            x: e.clientX - 5,
+            y: e.clientY - 5,
+            scale: 1,
+            alpha: 1,
+            color: c()
+        }),
+        t.body.appendChild(a)
+    }
+    function i(e) {
+        var a = t.createElement("style");
+        a.type = "text/css";
+        try {
+            a.appendChild(t.createTextNode(e))
+        } catch(t) {
+            a.styleSheet.cssText = e
+        }
+        t.getElementsByTagName("head")[0].appendChild(a)
+    }
+    function c() {
+        return "rgb(" + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + ")"
+    }
+    var s = [];
+    e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame ||
+    function(e) {
+        setTimeout(e, 1e3 / 60)
+    },
+    i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),
+    n(),
+    r()
+} (window, document);
+
+</script>
+	<!-- END: Heart -->
+
+	<!-- START: Aside -->
+	<aside class="aside">
+		<!-- START: NAVBAR -->
+
+		<div class="nav-wrapper">
+
+			<div class="navbar-toggler">
+				<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60">
+				  <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+				  <path class="line middle" d="m 30,50 h 40" />
+				  <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+				</svg>
+			</div>
+
+			<nav class="navbar text-center align-items-center justify-content-center">
+
+
+
+                <div class="collapse navbar-collapse show" id="navbarCollapse">
+                	<div class="about-avatar mb-5">
+                		<a href="index.html">
+							<img src="assets/images/about.jpg" alt="" class="img-fluid mx-auto d-block shadow-sm rounded-full">
+						</a>
+
+						<div class="about-avatar-details mt-4">
+							<h1>Yuchen Li</h1>
+							<p class="badge">Interactive Media Artist</p>
+						</div>
+
+					</div>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="lni-home"></i>Home</a>
+              
+                        <li class="nav-item">
+                            <a class="nav-link" href="work.html"><i class="lni-graduation"></i>Portfolio</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+               	<div class="aside-footer">
+                	<ul class="list-unstyled list-inline">
+                         <li class="list-inline-item"><a href="/assets/images/1.jpg" target="_blank"><i class="lni-wechat"></i></i></a></li>
+                        <li class="list-inline-item"><a href="mailto:yl6394@nyu.edu" target="_blank"><i class="lni-envelope"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/yuchen-li-3696b3183/" target="_blank"><i class="lni-linkedin-original"></i></a></li>
+                    </ul>
+                </div>
+	        </nav>
+        </div>
+        <!-- END: NAVBAR -->
+    </aside>
+    <!-- START: Aside -->
+
+    <div class="page-overlay">
+    	<span class="overlay-1"></span>
+    	<span class="overlay-2"></span>
+    </div>
+
+    <div class="page-wrapper">
+
+    	<!-- START: BLOG -->
+    	<section class="section section-light">
+    		<div class="container">
+				<div class="section-head">
+					<span>Constant Input Project</span>
+					<h2>Blog</h2>
+				</div>
+
+				<div class="row">
+					<div style="flex: 0 0 100%; max-width: 100%;background-color:rgba(0,0,0,0.1); padding:10px;">
+						<div class="blog-list d-block mb-5">
+							<div class="blog-list--img" style="height: 500px">
+								<img src="assets/images/color.png" alt="Blog Image" class="img-fluid" style="height: 500px">
+								<div class="blog-list--details d-flex justify-content-center align-items-center" style="height: 500px">
+									<div class="blog-list--details-in">
+										<p class="blog-date text-white">Week 3</p>
+										<span class="blog-cat">Week3-Color dodge in Game</span>
+									</div>
+								</div>
+							</div>
+							<div class="blog-list--desc mt-4">
+								<h3>Week3-Color dodge in Game</h3>
+								<p>In Chinese culture, most expressions are conservative. The violent, bloody and sexy contents in media are strictly controlled by government. However, in gaming world, violent, bloody and sexy contents are essential elements in a huge game. In other words, these elements are not avoidable in any popular game, included Lol. Lol especially has gameplay mechanics that characters fight and kill each other, and have one champion (character in game), who is a vampire, is strongly related to bloody elements.<br>
+
+      							 In Chinese severs of Lol, fortunately this champion is not banned because of the balance of the whole game, but the bloody color of this champion has edited. The bloody color of this champion’s skill and attack is edited to a darker red, shown in Figure 1. The blood in champion’s hand at left is bloodily red, but the one at right is dark red. People in China who edited it may believe that a darker color will hardly make people connect it to blood color, so it is less violent and bloody. However, in other servers, the color keeps bloodily red.</p>
+							</div>
+					</div>
+					</div>
+					<div style="flex: 0 0 100%; max-width: 100%;background-color:rgba(0,0,0,0.1); padding:10px;">
+						<a href="#" class="blog-list d-block mb-5">
+							<div class="blog-list--img" style="height: 700px">
+								<img src="assets/images/stage.png" alt="Blog Image" class="img-fluid" style="height: 700px">
+								<div class="blog-list--details d-flex justify-content-center align-items-center" style="height: 700px">
+									<div class="blog-list--details-in">
+										<p class="blog-date text-white">Week 4</p>
+										<span class="blog-cat">World Championship Stage Desgin</span>
+									</div>
+								</div>
+							</div>
+							<div class="blog-list--desc mt-4">
+								<h3>World Championship Stage Desgin</h3>
+								<p>Let's talk about the stage design of this game's biggest event.  Since this game is happening in Shanghai, China. The back screen is showing the remarkable building in Shanghai, and by different doors' position to show a visually 3-D effect. The visual effect on website streaming is always better than the actural stage, so I guess that this stage is made by 4-face screens, which are left, right, forward and downward. <br>
+
+​
+
+								Other than the setup screen in this stage, the color of the stage design is also very symbolic. The red and blue colors are two colors sybols two groups against each other. The cloud-like painting underneath the teams' logo is one of the most popular symbols in China, which means luck and peace. <br>
+
+​
+
+								However, the only thing that is not perfect in is desgin is that  two groups should have different colors of cloud as backgrounds, which should be the same as the color of their table or be similar to their tabel. Then this design will be consentient.</p>
+							</div>
+						</a>	
+					</div>
+					<div style="flex: 0 0 100%; max-width: 100%; height: 100%;background-color:rgba(0,0,0,0.1); padding:10px;">
+						<div class="blog-list d-block mb-5" >
+							<div class="blog-list--img"style="height: 700px">
+								<img src="assets/images/2.gif" alt="Blog Image" class="img-fluid" style="height: 700px" >
+								<div class="blog-list--details d-flex justify-content-center align-items-center"style="height: 700px">
+									<div class="blog-list--details-in">
+										<p class="blog-date text-white">Week 5</p>
+										<span class="blog-cat">In-game design</span>
+									</div>
+								</div>
+							</div>
+							<div class="blog-list--desc mt-4">
+								<h3>In-game design</h3>
+								<p>Let me talk some in-game object design. League of legends is a moba game stand for Multiplayer Online Battle Arena. In this kind of game, there are three lines and a jungle area. In the jungle area, there are many monsters. Player can kill monsters to earn money and experiences. <br>
+
+​
+
+								I played 6 years of league, and I just found that these jungle monsters may reveal players position by their line of sight! They will look at you even you are in the brush! Here is a explaination of brush works in League: Brush is a common map feature found on the Fields of Justice that obscures vision from outside observers. So, these monsters could see you if you are closed enough to them no matter where you are. They will always look at you, be nervious, and show unfriendly to you.<br>
+
+​
+
+								How detailed they made this game! </p>
+							</div>
+						</div>	
+					</div>
+					<div style="flex: 0 0 100%; max-width: 100%;background-color:rgba(0,0,0,0.1); padding:10px;">
+						<div class="blog-list d-block mb-5">
+							<div class="blog-list--img"style="height: 700px">
+								<img src="assets/images/game1.png" alt="Blog Image" class="img-fluid" style="height: 700px">
+								<div class="blog-list--details d-flex justify-content-center align-items-center"style="height: 700px">
+									<div class="blog-list--details-in">
+										<p class="blog-date text-white">Week5</p>
+										<span class="blog-cat">League of legends wild rift</span>
+									</div>
+								</div>
+							</div>
+							<div class="blog-list--desc mt-4">
+								<h3>League of Legends Mobile</h3>
+								<p>Lol is a PC game, which means you can only play it on your computer. However, because of the huge market of mobile gamers, lol start to design their mobile version game several years ago. This year--2020--this game finally come out to the public. It changed many in-game machinism to let player to play accessiblely, and easily. In the mobile game, there are left control to control the movement of the character, and the right control to control the skill apply. For each skills, even though most of them keep the same as PC-version, but some of them get buffed and remade for mobile version especially. Moreover, the size of the whole map and the whole screen changed as well for a smaller screen devices.</p>
+							</div>
+						</div>	
+					</div>
+					<div style="flex: 0 0 100%; max-width: 100%;background-color:rgba(0,0,0,0.1); padding:10px;">
+						<div href="#" class="blog-list d-block mb-5">
+							<div class="blog-list--img" style="height: 700px">
+								<img src="assets/images/game2.png" alt="Blog Image" class="img-fluid" style="height: 700px; " >
+								<div class="blog-list--details d-flex justify-content-center align-items-center" style="height: 700px">
+									<div class="blog-list--details-in" >
+										<p class="blog-date text-white">New UI</p>
+										<span class="blog-cat">Especially for Chinese</span>
+									</div>
+								</div>
+							</div>
+							<div class="blog-list--desc mt-4">
+				
+							</div>
+						</div>	
+					</div>
+					<div  style="flex: 0 100% 0; ;background-color:rgba(0,0,0,0.1); padding:10px; " >
+						<a href="#" class="blog-list d-block mb-5">
+							<div class="blog-list--img">
+								<img src="assets/images/client.png" alt="Blog Image" class="img-fluid"style="height: 1000px; " >
+								<div class="blog-list--details d-flex justify-content-center align-items-center">
+									<div class="blog-list--details-in">
+										<p class="blog-date text-white">Client of League of Legends</p>
+										<span class="blog-cat"></span>
+									</div>
+								</div>
+							</div>
+							<div class="blog-list--desc mt-4">
+
+								<p>Talk about the client of League of Legends. I played two servers in League of Legends. One is North American server which owned by Riot, and another one is Chinese server owned by Tencent Company which is the parent company of Riot games. So, even though these two servers are the same game, their clients are in different layouts. So, I screentshoted two home page of the different servers' clients. You could tell that two pages' backgrounds are different. Even though they are all in black and dark blue on its top and left frend lists' parts, the main part are in different patternts. In Chinese server, it is always some whole pictures as a background, and they are skins posters. It also has a pop-up page to show the new skins for the gamers. However, in NA server, nothing with the new skins were shown on the home page in the client. It only has a video of KDA-- a virtual pop star in Lol and other useful links. Even in the shop page of the client are so different in two servers. In Chinese one, it has a chinese on the picture to show the limit edition of the  skin, and the whole skin picture where shown, but in the NA one , it doesnt have the full picture of the skin, and no built in characters to tell it is limited edition.</p>
+							</div>
+						</a>	
+					</div>
+				</div>
+				<div class="container">
+					<nav class="mt-5 d-flex justify-content-center" aria-label="Page navigation">
+						<ul class="pagination">
+							<li class="page-item">
+								<a class="page-link" href="blog.html" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+									<span class="sr-only">Previous</span>
+								</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="blog.html">1</a></li>
+							<li class="page-item active"><a class="page-link" href="#">2</a></li>
+							<li class="page-item "><a class="page-link" href="blog3.html">3</a></li>
+							<li class="page-item">
+								<a class="page-link" href="blog3.html" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+									<span class="sr-only">Next</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>		    				
+			</div>
+    	</section>
+    	<!-- END: BLOG -->
+
+		<!--START: FOOTER-->
+		<footer class="footer section section-dark">
+			<div class="container">
+				<p class="copyright text-center mb-0">&copy; Tam 2020 | All Right Reserved</p>
+			</div>
+		</footer>
+		<!--END: FOOTER-->
+	</div>
+
+
+	<!-- JAVASCRIPTS -->
+
+	<script src="assets/js/vendor.js"></script>
+
+	<!-- Map -->
+	<script src="assets/js/map.js"></script>
+	<script src="https://ditu.google.cn/maps/api/js?key=AIzaSyD79MY72taVRlZVX2DU6L5PXOh3ezUUKMc&amp;callback=initMap" async="" defer=""></script>
+	
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/jquery.shuffle.min.js"></script>
+	<script src="assets/js/custom-shuffle-init.js"></script>
+	
+	<!-- Custom Js -->
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

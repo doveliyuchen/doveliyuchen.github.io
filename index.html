@@ -5,7 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Welcome to Yuchen's Portfolio</title>
 	<meta name="description" content="Welcome to Yuchen's Portfolio" />
-	
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>  
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script> 
+
+
 	<meta name="author" content="Yuchen" />
 	<meta name="theme-color" content="#2a2d35">
 
@@ -29,7 +32,59 @@
 		</div>
 	</div>
 	<!-- END: Preloader -->
+	<!-- START: Heart -->
 
+	<script type="text/javascript">
+	!function(e, t, a) {
+    function r() {
+        for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+        requestAnimationFrame(r)
+    }
+    function n() {
+        var t = "function" == typeof e.onclick && e.onclick;
+        e.onclick = function(e) {
+            t && t(),
+            o(e)
+        }
+    }
+    function o(e) {
+        var a = t.createElement("div");
+        a.className = "heart",
+        s.push({
+            el: a,
+            x: e.clientX - 5,
+            y: e.clientY - 5,
+            scale: 1,
+            alpha: 1,
+            color: c()
+        }),
+        t.body.appendChild(a)
+    }
+    function i(e) {
+        var a = t.createElement("style");
+        a.type = "text/css";
+        try {
+            a.appendChild(t.createTextNode(e))
+        } catch(t) {
+            a.styleSheet.cssText = e
+        }
+        t.getElementsByTagName("head")[0].appendChild(a)
+    }
+    function c() {
+        return "rgb(" + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + ")"
+    }
+    var s = [];
+    e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame ||
+    function(e) {
+        setTimeout(e, 1e3 / 60)
+    },
+    i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),
+    n(),
+    r()
+} (window, document);
+
+</script>
+	<!-- END: Heart -->
 	<!-- START: Aside -->
 	<aside class="aside">
 		<!-- START: NAVBAR -->
@@ -64,34 +119,30 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html"><i class="lni-home"></i>Home</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="resume.html"><i class="lni-briefcase"></i>resume</a>
+                            <a class="nav-link" href="Li,Yuchen-resume_CN&EN.pdf" download="Li,Yuchen-resume_CN&EN.pdf"><i class="lni-graduation"></i>Resume</a>
+
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="work.html"><i class="lni-graduation"></i>Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html"><i class="lni-offer"></i>Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html"><i class="lni-pencil"></i></i>Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html"><i class="lni-phone-handset"></i>Contact</a>
-                        </li>
+               
+                        
+
                     </ul>
                 </div>
 
                	<div class="aside-footer">
                 	<ul class="list-unstyled list-inline">
-                        <li class="list-inline-item"><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="lni-skype"></i></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="lni-youtube"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="lni-linkedin-original"></i></a></li>
+
+                        <li class="list-inline-item"><a href="/assets/images/1.jpg" target="_blank"><i class="lni-wechat"></i></i></a></li>
+                        <li class="list-inline-item"><a href="mailto:yl6394@nyu.edu" target="_blank"><i class="lni-envelope"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/yuchen-li-3696b3183/" target="_blank"><i class="lni-linkedin-original"></i></a></li>
                     </ul>
                 </div>
 	        </nav>
         </div>
+
+ 
+
         <!-- END: NAVBAR -->
     </aside>
     <!-- START: Aside -->
@@ -104,10 +155,145 @@
     <div class="page-wrapper">
 
 		<!-- START: HOME -->		
-    	<section class="section-home " id="home">
-    		<div class="glass">Yuchen Li</div>
-    		<!-- <img src="assets/images/banner.jpg" /> -->
-    	</section>	
+    	<ul class="row1">
+
+					<li class="col-6 col-md-4 list-item" >
+						<a href="senior_project/index.html"  target="_blank" >
+						<figure>
+
+							<img src="assets/images/p1-1.png" alt="p1">
+							<figcaption class="figcaption1">
+								
+								<div class="caption-inner">
+
+									<h3 class="portfolio-item-title" style="color: white">Senior Project</h3>
+									<div class="portfolio-item-desc" style="color: white">Interactive Website (Ongoing)</div>
+
+								</div>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+
+					<li class="col-6 col-md-4 list-item" >
+						<a href="blog.html"  target="_blank" >
+						<figure>
+							<img src="assets/images/p2-2.png" alt="p2">
+							<figcaption class="figcaption2">
+								
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Design Inspiration From League of Legends</h3>
+									<div class="portfolio-item-desc">Blog</div>
+								</div>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+
+					<li class="col-6 col-md-4 list-item" >
+						<a href="snapai.html"  target="_blank" >
+						<figure>
+							<img src="assets/images/17.gif" alt="p3">
+							<figcaption class="figcaption3">
+								
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title" style="color: white">AI in Snap!</h3>
+									<div class="portfolio-item-desc" style="color: white">Coding</div>
+								</div>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+
+					<li class="col-6 col-md-4 list-item" >
+						<a href="datavisual/1/index.html" target="_blank">
+						<figure>
+							<img src="assets/images/circle.png" alt="p4" height="100%">
+							<figcaption class="figcaption4">
+								
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Data Visualization</h3>
+									<div class="portfolio-item-desc">Coding</div>
+								</div>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+
+					<li class="col-6 col-md-4 list-item">
+						<a href="intro_to_web/final"  target="_blank">
+						<figure>
+							<img src="assets/images/wb.png" alt="p5">
+							<figcaption class="figcaption5">
+								
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title" style="color:white;">Web Game</h3>
+									<div class="portfolio-item-desc" style="color:white;">Coding</div>
+								</div>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+
+					<li class="col-6 col-md-4 list-item" >
+						<figure>
+							<img src="assets/images/game.png" alt="p6">
+							<figcaption class="figcaption6">
+								
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Tetris in P5.js</h3>
+									<div class="portfolio-item-desc">Coding</div>
+								</div>
+							</figcaption>
+						</figure>
+					</li>
+
+					<li class="col-6 col-md-4 list-item" >
+						<a href="video.html" target="_blank">
+						<figure>
+							<img src="assets/images/ya.png" alt="p6">
+							<figcaption class="figcaption7">
+								
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Yayoi Kusama</h3>
+									<div class="portfolio-item-desc">Video</div>
+								</div>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+
+					<li class="col-6 col-md-4 list-item">
+						<a href="me/index" target="_blank">
+						<figure>
+							<img src="assets/images/self.png" alt="p6">
+							<figcaption class="figcaption8">
+								
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Interactive Self Introduction</h3>
+									<div class="portfolio-item-desc">Interactive Website</div>
+								</div>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+
+					<li class="col-6 col-md-4 list-item" >
+						<a href="work.html">
+						<figure>
+							
+							<img src="assets/images/9c.png" alt="p6">
+							<figcaption class="figcaption9">
+								
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Poster Design Collections</h3>
+									<div class="portfolio-item-desc">Image</div>
+								</div>
+							</figcaption>
+						</a>
+					</li>
+
+				</ul><!-- .projects-container -->
     	<!-- END: HOME -->
 
 		<!-- START: ABOUT -->
@@ -120,13 +306,14 @@
 
 				<div class="row justify-content-center align-items-center">
 					<div class="col-md-6">
-						<img class="about-img img-fluid wow fadeInUp" data-wow-duration="1s" src="assets/images/avatar.jpg" alt="About Picture">
+						<img class="about-img img-fluid wow fadeInUp" data-wow-duration="1s" src="assets/images/avatar.png" width="50%" alt="About Picture">
 					</div>
 					<div class="col-md-6">
 						<div class="about-desc wow fadeInUp" data-wow-duration="1s"  data-wow-delay="500ms">
 							<div class="about-desc-content">
 								<h1 class="font-weight-light mb-5">I'm Yuchen Li</h1>
-								<p class="font-weight-light my-3">A Shanghai-based interactive media artist. I will continue studying interactive media arts in NYU to pursue a Master degree, and achieve myself on my choices combining both of my professional skills and personal interests. </p>
+								<p class="font-weight-light my-3">A Shanghai-based interactive media artist. I will continue studying interactive media arts in NYU to pursue a Master degree, and achieve myself on my choices combining both of my professional skills and personal interests. <br><br>
+								I love new techonologies, and this avatar is my face in AI! </p>
 					
 							</div>
 
@@ -174,37 +361,37 @@
 				<div class="section-skills-wrap">
 					<div class="row">
 						<div class="col-md-6">
-							<p>Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate. Ut a mi tempus massa malesuada fermentum.</p>
-							<p> tempor iaculis massa. Sed placerat justo sed libero varius vulputate. Ut a mi tempus massa malesuada fermentum.</p>
+							<p>I love designing things, and enjoy the process. Coding is one of the most powerful tool to help me design.</p>
+							<p> Making media interactively is my job, and I will try my best to design it!</p>
 						</div>
 
 						<div class="col-md-6">
 							<div class="resume-panel">
 								<div class="mb-4 wow fadeInUp"  data-wow-duration="1.5s">
-									<h6>Graphic Design </h6>
+									<h6>Coding </h6>
 									<div class="progress mt-2">
 										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 								</div>
 
 								<div class="mb-4 wow fadeInUp"  data-wow-duration="1.5s" data-wow-delay=".2s">
-									<h6>Logo Design</h6>
+									<h6>Web Design</h6>
 									<div class="progress mt-2">
-										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 								</div>
 
 								<div class="mb-4 wow fadeInUp"  data-wow-duration="1.5s" data-wow-delay=".3s">
-									<h6>Logo Design</h6>
+									<h6>Visual Design</h6>
 									<div class="progress mt-2">
-										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 								</div>
 
 								<div class="mb-0 wow fadeInUp"  data-wow-duration="1.5s" data-wow-delay=".4s">
-									<h6>Photoshop & Figma</h6>
+									<h6>Video Editing</h6>
 									<div class="progress mt-2">
-										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 								</div>
 
@@ -216,48 +403,7 @@
 		</section>
 		<!-- END: ABOUT -->
 
-		<!-- START: SERVICES -->
-		<section class="section section-dark section-services" id="services">
-			<div class="container">
-				<div class="section-head">
-					<span>WHAT I DO</span>
-					<h2>My Services</h2>
-				</div>
 
-				<div class="row mt-4">
-					<div class="col-sm-6 col-lg-6">
-						<div class="services-list b-box hover-state p-4 mt-4 wow fadeInUp" data-wow-duration="1.5s">
-							<div class="services-list-icon">
-								<i class="lni-color-pallet"></i>
-								<span>01</span>
-							</div>
-							<div class="mt-4">
-								<h5 class="mb-0">Graphic Design</h5>
-								<p class=" mt-3">Modern and mobile-ready website that will help of your marketing. Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-lg-6">
-						<div class="services-list b-box hover-state p-4 mt-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
-							<div class="services-list-icon">
-								<i class="lni-laptop-phone"></i>
-								<span>02</span>
-							</div>
-							<div class="mt-4">
-								<h5 class="mb-0">Web Development</h5>
-								<p class=" mt-3">Modern and mobile-ready website that will help of your marketing. Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12 text-center mt-5 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
-						<a href="services.html" class="btn hover-state">View All</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END: SERVICES -->
 
 
 		<!--START: FOOTER-->

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome to Yuchen's Portfolio</title>
+	<meta name="description" content="Welcome to Yuchen's Portfolio" />
+
+	<meta name="author" content="Yuchen" />
+	<meta name="theme-color" content="#2a2d35">
+
+	<!-- Vendor Css-->
+	<link rel="stylesheet" href="assets/css/vendor.css" />
+	<link rel="stylesheet" href="assets/css/LineIcons.min.css" />	
+
+	<!-- TamTemplate style Css -->
+	<link href="assets/css/tam.css" rel="stylesheet">
+
+	<!-- Custom style Css -->
+	<link href="assets/css/custom.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+	<!-- START: Preloader -->
+	<div id="preloader" class="preloader">
+		<div class="spinner-grow text-dark" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	<!-- END: Preloader -->
+	<!-- START: Heart -->
+
+	<script type="text/javascript">
+	!function(e, t, a) {
+    function r() {
+        for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+        requestAnimationFrame(r)
+    }
+    function n() {
+        var t = "function" == typeof e.onclick && e.onclick;
+        e.onclick = function(e) {
+            t && t(),
+            o(e)
+        }
+    }
+    function o(e) {
+        var a = t.createElement("div");
+        a.className = "heart",
+        s.push({
+            el: a,
+            x: e.clientX - 5,
+            y: e.clientY - 5,
+            scale: 1,
+            alpha: 1,
+            color: c()
+        }),
+        t.body.appendChild(a)
+    }
+    function i(e) {
+        var a = t.createElement("style");
+        a.type = "text/css";
+        try {
+            a.appendChild(t.createTextNode(e))
+        } catch(t) {
+            a.styleSheet.cssText = e
+        }
+        t.getElementsByTagName("head")[0].appendChild(a)
+    }
+    function c() {
+        return "rgb(" + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + ")"
+    }
+    var s = [];
+    e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame ||
+    function(e) {
+        setTimeout(e, 1e3 / 60)
+    },
+    i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),
+    n(),
+    r()
+} (window, document);
+
+</script>
+	<!-- END: Heart -->
+
+	<!-- START: Aside -->
+	<aside class="aside">
+		<!-- START: NAVBAR -->
+
+		<div class="nav-wrapper">
+
+			<div class="navbar-toggler">
+				<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60">
+				  <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+				  <path class="line middle" d="m 30,50 h 40" />
+				  <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+				</svg>
+			</div>
+
+			<nav class="navbar text-center align-items-center justify-content-center">
+
+
+
+                <div class="collapse navbar-collapse show" id="navbarCollapse">
+                	<div class="about-avatar mb-5">
+                		<a href="index.html">
+							<img src="assets/images/about.jpg" alt="" class="img-fluid mx-auto d-block shadow-sm rounded-full">
+						</a>
+
+						<div class="about-avatar-details mt-4">
+							<h1>Yuchen Li</h1>
+							<p class="badge">Interactive Media Artist</p>
+						</div>
+
+					</div>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="lni-home"></i>Home</a>
+              
+                        <li class="nav-item">
+                            <a class="nav-link" href="work.html"><i class="lni-graduation"></i>Portfolio</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+               	<div class="aside-footer">
+                	<ul class="list-unstyled list-inline">
+                         <li class="list-inline-item"><a href="/assets/images/1.jpg" target="_blank"><i class="lni-wechat"></i></i></a></li>
+                        <li class="list-inline-item"><a href="mailto:yl6394@nyu.edu" target="_blank"><i class="lni-envelope"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/yuchen-li-3696b3183/" target="_blank"><i class="lni-linkedin-original"></i></a></li>
+                    </ul>
+                </div>
+	        </nav>
+        </div>
+        <!-- END: NAVBAR -->
+    </aside>
+    <!-- START: Aside -->
+
+    <div class="page-overlay">
+    	<span class="overlay-1"></span>
+    	<span class="overlay-2"></span>
+    </div>
+
+    <div class="page-wrapper">
+
+    	<!-- START: BLOG -->
+    	<section class="section section-light">
+    		<div class="container">
+				<div class="section-head">
+					<span>AI in Snap!</span>
+					<h2>Building an AI in Snap!</h2>
+				</div>
+
+				<div class="row">
+					<div style="flex: 0 0 100%; max-width: 100%;background-color:rgba(0,0,0,0.1); padding:10px;" >
+						<div class="blog-list d-block mb-5">
+							<div class="blog-list--img" style="height: 700px">
+								<img src="assets/images/snap.png" alt="Blog Image" class="img-fluid" style="height: 700px">
+								<div class="blog-list--details d-flex justify-content-center align-items-center" style="height: 700px">
+									<div class="blog-list--details-in">
+										<p class="blog-date text-white">Snap! and Project Intro</p>
+										
+									</div>
+								</div>
+							</div>
+							<div class="blog-list--desc mt-4">
+								<h3>Snap! and Project Intro</h3>
+								<p>Snap! is a block-like programming language which is designed for kids and beginners to learn. It lowered the threshold of programming. Nowadays, AI is a new technology which also has a high threshold. Building AI in Snap! will lower the threshold of AI, and allow more beginners to learn about AI.</p> <br>
+
+							</div>
+					</div>
+					</div>
+					<div style="flex: 0 0 100%; max-width: 100%;background-color:rgba(0,0,0,0.1); padding:10px;">
+						<a href="#" class="blog-list d-block mb-5">
+							<div class="blog-list--img" style="height: 600px">
+								<img src="assets/images/gestures.png" alt="Blog Image" class="img-fluid" style="height: 600px">
+								<div class="blog-list--details d-flex justify-content-center align-items-center" style="height: 600px">
+									<div class="blog-list--details-in">
+										<p class="blog-date text-white">Gestures & Styles</p>
+										<span class="blog-cat"></span>
+									</div>
+								</div>
+							</div>
+							<div class="blog-list--desc mt-4">
+								<h3>Gestures & Styles</h3>
+								<p>In this project, I built an AI which will make the camera image into some style by the gesture it detected. I used the Chinese gestures to show 1 to 8. The gestures are shown above.</p>
+							</div>
+						</a>	
+					</div>
+					<div style="flex: 0 0 100%; max-width: 100%; height: 100%;background-color:rgba(0,0,0,0.1); padding:10px;">
+						<div class="blog-list d-block mb-5" >
+							<div class="blog-list--img"style="height: 1200px">
+								<img src="assets/images/p2.jpg" alt="Blog Image" class="img-fluid" style="height: 1200px" >
+
+							</div>
+
+						</div>	
+					</div>
+					
+						<div style="flex: 0 0 100%; max-width: 100%; height: 100%;background-color:rgba(0,0,0,0.1);">
+						<div class="blog-list d-block mb-5" >
+							<div class="blog-list--img"style="height: 1200px">
+								<img src="assets/images/p3.jpg" alt="Blog Image" class="img-fluid" style="height: 1200px" >
+
+							</div>
+
+						</div>	
+					</div><div style="flex: 0 0 100%; max-width: 100%; height: 100%;background-color:rgba(0,0,0,0.1); ">
+						<div class="blog-list d-block mb-5" >
+							<div class="blog-list--img"style="height: 1200px">
+								<img src="assets/images/p4.jpg" alt="Blog Image" class="img-fluid" style="height: 1200px" >
+
+							</div>
+
+						</div>	
+					</div><div style="flex: 0 0 100%; max-width: 100%; height: 100%;background-color:rgba(0,0,0,0.1); ">
+						<div class="blog-list d-block mb-5" >
+							<div class="blog-list--img"style="height: 1200px">
+								<img src="assets/images/p5.jpg" alt="Blog Image" class="img-fluid" style="height: 1200px" >
+
+							</div>
+
+						</div>	
+					</div><div style="flex: 0 0 100%; max-width: 100%; height: 100%;background-color:rgba(0,0,0,0.1);">
+						<div class="blog-list d-block mb-5" >
+							<div class="blog-list--img"style="height: 1200px">
+								<img src="assets/images/p6.jpg" alt="Blog Image" class="img-fluid" style="height: 1200px" >
+
+							</div>
+
+						</div>	
+					</div><div style="flex: 0 0 100%; max-width: 100%; height: 100%;background-color:rgba(0,0,0,0.1);">
+						<div class="blog-list d-block mb-5" >
+							<div class="blog-list--img"style="height: 1200px">
+								<img src="assets/images/p7.jpg" alt="Blog Image" class="img-fluid" style="height: 1200px" >
+
+							</div>
+
+						</div>	
+					</div><div style="flex: 0 0 100%; max-width: 100%; height: 100%;background-color:rgba(0,0,0,0.1); ">
+						<div class="blog-list d-block mb-5" >
+							<div class="blog-list--img"style="height: 1200px">
+								<img src="assets/images/p8.jpg" alt="Blog Image" class="img-fluid" style="height: 1200px" >
+
+							</div>
+
+						</div>	
+					</div>
+					
+				</div>
+	    				
+			</div>
+    	</section>
+    	<!-- END: BLOG -->
+
+		<!--START: FOOTER-->
+		<footer class="footer section section-dark">
+			<div class="container">
+				<p class="copyright text-center mb-0">&copy; Tam 2020 | All Right Reserved</p>
+			</div>
+		</footer>
+		<!--END: FOOTER-->
+	</div>
+
+
+	<!-- JAVASCRIPTS -->
+
+	<script src="assets/js/vendor.js"></script>
+
+	<!-- Map -->
+	<script src="assets/js/map.js"></script>
+	<script src="https://ditu.google.cn/maps/api/js?key=AIzaSyD79MY72taVRlZVX2DU6L5PXOh3ezUUKMc&amp;callback=initMap" async="" defer=""></script>
+	
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/jquery.shuffle.min.js"></script>
+	<script src="assets/js/custom-shuffle-init.js"></script>
+	
+	<!-- Custom Js -->
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>
