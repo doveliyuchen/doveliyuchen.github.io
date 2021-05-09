@@ -49,7 +49,7 @@ function setup() {
   	 game.style('left','50%')
   	 game.style('font-size','2rem')
   	 game.style('letter-spacing','2px')
-  	 game.position(.25*width-100,height*0.1)
+  	 game.position(.33*width-100,height*0.1)
   	 //-----------------------------
   	 game1=createButton('Math')
 	 game1.style('background-color','#B3C0F5')
@@ -59,17 +59,8 @@ function setup() {
   	 game1.style('left','50%')
   	 game1.style('font-size','2rem')
   	 game1.style('letter-spacing','2px')
-  	 game1.position(.5*width-50,height*0.1)
+  	 game1.position(.66*width-50,height*0.1)
   	 //-----------------------------
-  	 game2=createButton('Chinese')
-	 game2.style('background-color','#6A76A8')
-	 game2.style('padding','8px')
-  	 game2.style(' border-radius','6px')
-  	 game2.style('color','#F5E4B3')
-  	 game2.style('left','50%')
-  	 game2.style('font-size','2rem')
-  	 game2.style('letter-spacing','2px')
-  	 game2.position(.75*width,height*0.1)
   	 //-----------------------------
   	 next_but=createButton('Next')
   	 next_but.style('padding','15px')
@@ -89,7 +80,7 @@ function draw() {
 
 	game.mouseClicked(stage0)
 	game1.mouseClicked(stage1)
-	game2.mouseClicked(stage2)
+
 	next_but.mouseClicked(chat_switch)
 	back_but.mouseClicked(chat_back)
 	if (stage==0) {
@@ -115,7 +106,7 @@ function stage0(){
 	stage=0
 	game1.style('color','#F5E4B3')
 	game.style('color','#A89459')
-	game2.style('color','#F5E4B3')
+
 	if (chat_num==0){
 		chat0()
 		if (game_status==0){
@@ -144,7 +135,7 @@ function stage1(){
 	stage=1
 	game1.style('color','#A89459')
 	game.style('color','#F5E4B3')
-	game2.style('color','#F5E4B3')
+
 	if (chat_num==0){
 		chat0()
 		if (game_status==0){
@@ -168,7 +159,6 @@ function stage2(){
 	stage=2
 	game1.style('color','#F5E4B3')
 	game.style('color','#F5E4B3')
-	game2.style('color','#A89459')
 
 
 }
