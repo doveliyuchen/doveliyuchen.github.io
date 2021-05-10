@@ -4,6 +4,9 @@
 <meta charset="UTF-8" />
 <title>Play</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script type="text/javascript" src="script.js"></script>
 <!--
 
 SugarCube (v2.34.1): A free (gratis and libre) story format.
@@ -32,6 +35,26 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 -->
+<div class="sidebar">
+        <ul>
+            <li><a class="ion-ios-home" href="../index.html"></a></li>
+            <liclass="this_page"><a class="ion-ios-game-controller-b" href="/../2.html"></a></li>
+            <li ><a class="ion-ios-person" href="/me/index.html"></a></li>
+        </ul>
+    </div>
+    <a class="btn"></a>
+    <script type="text/javascript">
+    $('.btn').on('click', function() {
+        $('.btn').toggleClass('btnc');
+        $('.sidebar').toggleClass('side');
+
+    });
+    </script>
+
+
+
+
+
 <script id="script-libraries" type="text/javascript">
 if(document.head&&document.addEventListener&&document.querySelector&&Object.create&&Object.freeze&&JSON){document.documentElement.setAttribute("data-init", "loading");
 /*! @source http://purl.eligrey.com/github/classList.js/blob/1.2.20171210/classList.js */
