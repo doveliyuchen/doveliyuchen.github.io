@@ -75,7 +75,7 @@ function setup() {
 
   	link=createA('../senior_project/','Authority','_blank')
 	link.style('font-size','40px')
-	link.position(.5*width+500, 450)
+	link.position(.5*width+500, 0.57*height)
 	link.style('visibility', 'hidden')
 	//--------------------------------
 	music=createButton('Play Music')
